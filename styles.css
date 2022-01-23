@@ -1,0 +1,128 @@
+    /*---------------------------------------------FOOTER---------------------------------------------*/
+    .attribution { 
+        font-size: 11px;
+        text-align: center; 
+        }
+    
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+        }
+    /*--------------------------------------VARIABLES & ASSETS--------------------------------------*/
+    
+    :root {
+        --Brightorange: hsl(31, 77%, 52%);
+        --Darkcyan: hsl(184, 100%, 22%);
+        --Verydarkcyan: hsl(179, 100%, 13%);    
+        --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+        --Verylightgray: hsl(0, 0%, 95%);
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+    /*-- Fonts
+
+        font-family: 'Big Shoulders Display', cursive;
+
+    font-family: 'Lexend Deca', sans-serif;
+
+    --*/ 
+
+    /*-----------------------------------CARD COMPONENTS--------------------------------------------*/ 
+    body {
+        display: flex;
+        align-items: center;
+        background: var(--Verylightgray);
+        min-height: 100vh;
+        font-size: 15px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 2rem;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .wrapper .box1 {
+        background: var(--Brightorange)
+    }
+
+    .wrapper .box2 {
+        background: var(--Darkcyan);
+    }
+
+    .wrapper .box3 {
+        background: var(--Verydarkcyan);
+    }
+
+    .box {
+        padding: 40px;
+    }
+
+    /*----------------------------------CONTENT-------------------------------------------*/
+
+    .box h2 {
+        color: var(--Verylightgray);
+        font-family: 'Big Shoulders Display', cursive;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+
+    .box p {
+        color: var(--Transparentwhite);
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        line-height: 1.75em;
+    }
+    
+    .box a {
+        text-decoration: none;
+        padding: 17px 28px;
+        background: var(--Verylightgray);
+        display: inline-block;
+        margin-top: 60px;
+        border-radius: 26px;
+        border: 2px solid var(--Verylightgray);
+        transition: all .4s ease-in-out;
+    }
+
+    .box1 a {
+        color: var(--Brightorange);
+    }
+
+    .box2 a {
+        color: var(--Darkcyan);
+    }
+
+    .box3 a {
+        color: var(--Verydarkcyan);
+    }
+    
+    .box a:hover {
+        color: var(--Verylightgray);
+        background: transparent;
+    }
+
+    @media (max-width: 375px) {
+        .wrapper {
+            grid-template-columns: 1fr;
+        }
+        
+        .box a {
+            margin-top: 50px;
+        }
+        
+        .box p {
+            line-height: 1.85em;
+        }
+
+    }
