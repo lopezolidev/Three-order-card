@@ -2,13 +2,24 @@
     .attribution { 
         font-size: 11px;
         text-align: center; 
-        margin-top: 20px;
+        margin-top: 30px;
         margin-bottom: 0;
         }
     
     .attribution a { 
-        color: hsl(228, 45%, 44%); 
+        color: var(--Transparentwhite);
+        background: var(--Darkcyan);
+        padding: 10px 15px;
+        border-radius: 20px;
+        text-decoration: none;
+        border: 2px solid var(--Darkcyan);
+        transition: all .4s ease-in-out;
         }
+
+    .attribution a:hover {
+        color: var(--Darkcyan);
+        background: transparent;
+    }
     /*--------------------------------------VARIABLES & ASSETS--------------------------------------*/
     
     :root {
@@ -17,6 +28,7 @@
         --Verydarkcyan: hsl(179, 100%, 13%);    
         --Transparentwhite: hsla(0, 0%, 100%, 0.75);
         --Verylightgray: hsl(0, 0%, 95%);
+        --Elecricblue: hsl(228, 45%, 44%);
     }
 
     @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
@@ -35,7 +47,7 @@
         align-items: center;
         background: var(--Verylightgray);
         min-height: 100vh;
-        font-size: 15px;
+        font-size: 0.95em;
         font-family: 'Lexend Deca', sans-serif;
         font-weight: 400;
     }
@@ -76,7 +88,7 @@
         font-family: 'Big Shoulders Display', cursive;
         font-weight: 700;
         text-transform: uppercase;
-        font-size: 40px;
+        font-size: 2.8em;
     }
 
     .box p {
@@ -116,7 +128,7 @@
 
     /*-----------------------------------MEDIA QUERIES---------------------------------------------*/
 
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         .wrapper {
             grid-template-columns: 1fr;
         }
@@ -130,3 +142,20 @@
         }
 
     }
+
+    /*-----------------------------------OTHERS----------------------------------------------------*/
+
+    /*.sr-only {
+        border: 0 !important;
+        clip: rect(1px, 1px, 1px, 1px) !important;
+        -webkit-clip-path: inset(50%) !important;
+            clip-path: inset(50%) !important; 
+        height: 1px !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        position: absolute !important;
+        width: 1px !important;
+        white-space: nowrap !important;            
+    }
+    
