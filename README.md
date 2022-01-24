@@ -45,7 +45,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site](https://rockwatch.github.io/Three-order-card/)
 
 ## My process
 
@@ -85,7 +85,6 @@ This was my how-to-guide, use it as you wish!
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 
 ### What I learned
 
@@ -118,8 +117,6 @@ This styles inside the wrapper were extremely useful, so as for the anchor:
     }
 
 ```
-
-### Continued development
 
 - Learn to imrprove my skills with grid and flexbox.
 
