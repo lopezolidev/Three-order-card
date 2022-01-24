@@ -2,6 +2,8 @@
     .attribution { 
         font-size: 11px;
         text-align: center; 
+        margin-top: 20px;
+        margin-bottom: 0;
         }
     
     .attribution a { 
@@ -111,6 +113,8 @@
         color: var(--Verylightgray);
         background: transparent;
     }
+
+    /*-----------------------------------MEDIA QUERIES---------------------------------------------*/
 
     @media (max-width: 375px) {
         .wrapper {
